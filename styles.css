@@ -11,15 +11,29 @@ img {
 
 /* Page styling */
 body {
-    background-color: #333;
+    background-color: #1c75bc;
     color: rgb(235, 235, 235);
     transition: all 2s;
+
+    font-family: "Averia Sans Libre", sans-serif;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    font-family: "Cossette Titre", sans-serif;
 }
+
+body.switch h1{
+    color: yellow;
+    font-size: 170px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 80%;
+}
+
+body.switch h3, body.switch h2, body.switch p, body.switch button, body.switch h1, body.switch li{
+    text-transform: uppercase;
+}
+
 
 #container {
     position: relative;
@@ -33,42 +47,168 @@ body.switch {
 
 header {
     margin: 0 auto 2em auto;
+    display: flex;
 }
 
 #banner {
-    position: relative;
-    display: flex;
-    width: 1100px;
-    height: 250px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
     overflow: hidden;
-    display: grid;
-	place-items: center;
-}
 
-#banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 250px;
+    z-index: 1;
     transition: all 2s;
 }
+
+#speech{
+    position: absolute;
+    top: 1.5em;
+    left: 23%;
+
+    width: 230px;
+    height: 160px;
+    background-image: url(images/bubble.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    
+    padding: 2em;
+    color: black;
+    z-index: 2;
+}
+
+body.switch #speech{
+    rotate: 25deg;
+    top: 4em;
+    left: 11%;
+}
+
+#name {
+    z-index: 2;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+#person{
+    position: absolute;
+    top: 12em;
+    left: 300px;
+}
+
+#banner.switch, #person.switch {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top:0;
+    left:0;
+
+    z-index: -1;
+
+    transition: all 2s;
+}
+
+
+#armLeft, #armTop, #handLeft, #handRight, #head, #legBack, #legFront, #torso{
+    position: absolute;
+    max-width: 100%;
+}
+
+#armLeft{
+    transform-origin: top left;
+    top: 1em;
+    left: 0;
+}
+
+#armTop{
+    transform-origin: top left;
+    top: -4%;
+    left: 0;
+
+    width: 100vw;
+}
+
+#handRight{
+    transform-origin: top right;
+    top: -30%;
+    right: 0;
+}
+
+#handLeft{
+    transform-origin: bottom left;
+    bottom: 25%;
+    left: 0;
+}
+
+#head{
+    transform-origin: top left;
+    top: -2%;
+    left: 5%;
+}
+
+#legBack{
+    transform-origin: bottom right;
+    bottom: 0;
+    right: -1%;
+}
+
+#legFront{
+    transform-origin: bottom left;
+    bottom: -5%;
+    left: 0;
+
+}
+
+#torso{
+    transform-origin: top left;
+    top: -20%;
+    left: 0;
+}
+
 
 main {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+
+    z-index:2;
+    position: relative;
+    margin-top: 250px;
 }
 
 main section {
     flex: 1;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
+    border: 5px rgb(161, 33, 1) solid;
+    background-color: #d5e0ce;
+    margin: 1em;
     padding: 1em;
+    padding-top: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(161, 33, 1);
+    padding: 0.5em;
+    
+}
+
+h3{
+    background-color: rgb(161, 33, 1);
+    padding: 0.5em;
 }
 
 nav ol, nav ul {
@@ -103,9 +243,9 @@ section.switch a:hover {
 }
 
 button {
-    position: absolute;
+    /* position: absolute;
     top: 20px;
-    right: 20px;
+    right: 20px; */
     padding: 12px;
     background-color: orange;
     color: #333;
