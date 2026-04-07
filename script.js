@@ -46,8 +46,8 @@
             }
 
             person.innerHTML = `
-            <img src="images/miniMe.png" alt="small" width="50">
-            <img src="images/shadow.png" alt="shadow" width="50">`;
+            <img id="mini" src="images/miniMe.png" alt="small" width="50">
+            <img id="shadow" src="images/shadow.png" alt="shadow" width="50">`;
 
             speech.textContent = 'Make me big!'
 

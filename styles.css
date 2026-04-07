@@ -13,9 +13,16 @@ img {
 body {
     background-color: #1c75bc;
     color: rgb(235, 235, 235);
-    transition: all 2s;
 
     font-family: "Averia Sans Libre", sans-serif;
+}
+
+body h1{
+    font-size: 24px;
+}
+
+body h2, body li{
+    font-size: 16px;
 }
 
 body.switch {
@@ -62,7 +69,6 @@ header {
     width: 100vw;
     height: 250px;
     z-index: 1;
-    transition: all 2s;
 }
 
 #speech{
@@ -105,6 +111,20 @@ body.switch #speech{
     left: 300px;
 }
 
+#mini:hover{
+    animation: wiggle 1s linear infinite;
+}
+
+@keyframes wiggle{
+    0% {transform: translateY(0px) rotate(0deg);}
+    25% {transform: translateY(-10px) rotate(10deg);}
+    50% {transform: translateY(-20px) rotate(-10deg);}
+    75% {transform: translateY(-10px) rotate(10deg)}
+    100% {transform: translateY(0px) rotate(0deg);}
+}
+
+/* body parts -------------------------------------------------------------------*/
+
 #banner.switch, #person.switch {
     position: fixed;
     width: 100vw;
@@ -114,8 +134,6 @@ body.switch #speech{
     left:0;
 
     z-index: -1;
-
-    transition: all 2s;
 }
 
 
@@ -142,6 +160,8 @@ body.switch #speech{
     transform-origin: top right;
     top: -30%;
     right: 0;
+
+    animation: dangle 6s ease-in-out infinite;
 }
 
 #handLeft{
@@ -175,6 +195,14 @@ body.switch #speech{
     left: 0;
 }
 
+@keyframes dangle{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(-2deg);}
+    100%{transform: rotate(0deg);}
+}
+
+
+/* main-------------------------------------------------------------------- */
 
 main {
     display: flex;
@@ -225,19 +253,10 @@ section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    color: #333;
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
-}
-
-section.switch a {
-    color: #333;
-}
-
-section.switch a:hover {
     background-color: #333;
     color: rgb(235, 235, 235);
 }
