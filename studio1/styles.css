@@ -1,0 +1,99 @@
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    box-sizing: border-box;
+    padding: 2em;
+    height: 100vh;
+    margin: 0;
+
+    color: white;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+
+    gap: 3em;
+}
+
+header{
+    padding-left: 1.5em;
+}
+
+#controls{
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.fa-expand{
+    font-size: 36px;
+    display: inline-block;
+}
+
+.fa-expand:hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+div{
+    z-index: 3;
+    gap: 4em;
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+main p{
+    margin: 0px;
+    padding: 0.5em;
+    color: red;
+}
+
+ul{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    width: fit-content;
+}
+
+li a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    color: white;
+    font-weight: 400;
+}
+
+li a:hover, a.active{
+    background: rgba(0, 0, 0, 0.5); 
+    color: yellow;
+}
+
+li a:active{
+    background: rgba(0, 0, 0); 
+}
