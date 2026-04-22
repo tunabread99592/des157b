@@ -1,0 +1,40 @@
+body{
+    background-color: #c7db46;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+section{
+    height: 100vh;
+    margin-right: -20vw;
+}
+
+section img{
+    height: 100%;
+    object-fit: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+}
+
+#container{
+    background-color: #b2cc31;
+
+    
+    width: 40%;
+    max-width: 800px;
+
+    justify-content: center;
+    padding: 2em;
+}
