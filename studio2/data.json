@@ -1,7 +1,8 @@
 {
     "sneeze_log": [
         {
-            "time": "10:32:00",
+            "time": "10:32 AM",
+            "hours": 0.53,
             "number": 6,
             "conditions": "in the office",
             "feelings": "mildly sad",
