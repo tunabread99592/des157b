@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="styles.css">
+
 
     <title>Allergy Szn</title>
 </head>
@@ -18,23 +23,34 @@
     <main>
          <header>
             <img src="images/title.svg" alt="allergy-szn" height="120">
-            <p>The number of my sneezes over 24 hours</p>
         </header>
+
+        <div id="action-area">
+            <p>Click to watch me overcome</p>
+            <div id="timeline"></div>
+        </div>
 
         
         <div id="container">
             <div id="bees">
+                <h3># of Sneezes:</h2>
                 <img src="images/bee.png" alt="bee" width="50">
             </div>
 
-            <h2>Conditions</h2>
-                <p id="conditions"></p>
-        
-            <h2>Feeling about Sneeze</h2>
-                <p id="feeling about sneeze"></p>
+            <div id="condition">
+                <h3>Condition:</h2>
+                <p>peanut butter</p>
+            </div>
 
-            <h2>Reason</h2>
-                <p id="reasons"></p>
+            <div id="feeling">
+                <h3>Feeling:</h2>
+                <p>aw man</p>
+            </div>
+
+            <div id="reason">
+                <h3>Reason:</h2>
+                <p>so sad</p>
+            </div>
         </div>
     </main>
     
