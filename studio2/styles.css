@@ -110,7 +110,7 @@ ul li{
 #container{
     background-color: #b2cc31;
     /* border: solid 2px #faff6e; */
-    corner-shape: bevel;
+    /* corner-shape: bevel; */
     border-radius: 20px;
 
     
