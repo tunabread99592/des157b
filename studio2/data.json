@@ -1,61 +1,66 @@
-{
-    "sneeze_log": [
-        {
-            "time": "10:32 AM",
-            "hours": 0.53,
-            "number": 6,
-            "conditions": "in the office",
-            "feelings": "mildly sad",
-            "reason": "upper lip huuuurts"
-        },
-        {
-            "time": "10:48:00",
-            "number": 4,
-            "conditions": "still in the office",
-            "feelings": "embarrassed",
-            "reason": "it's so loud"
-        },
-        {
-            "time": "11:00:00",
-            "number": 4,
-            "conditions": "still in the office",
-            "feelings": "angry",
-            "reason": "should've taken an allergy pill"
-        },
-        {
-            "time": "3:41 PM",
-            "number": 1,
-            "conditions": "working 2nd floor MU",
-            "feelings": "inspired",
-            "reason": "retroactively got idea for this project"
-        },
-        {
-            "time": "8:05 PM",
-            "number": 4,
-            "conditions": "cooking, got home about 20 minutes earlier",
-            "feelings": "okay",
-            "reason": "more focused on turkey burger"
-        },
-        {
-            "time": "9:10 PM",
-            "number": 2,
-            "conditions": "procrastinating on work",
-            "feelings": "happy",
-            "reason": "about to drink peach juice"
-        },
-        {
-            "time": "1:06 AM",
-            "number": 4,
-            "conditions": "doing homework",
-            "feelings": "uncomfortable",
-            "reason": "drippy and want to take a shower"
-        },
-        {
-            "time": "10:04 AM",
-            "number": 2,
-            "conditions": "in AHI lecture",
-            "feelings": "discombobulated",
-            "reason": "sniffy and so tired"
-        }   
-    ]
-}
+[
+    {
+        "time": "10:32 AM",
+        "hours": 0.53,
+        "number": 6,
+        "conditions": "in the office",
+        "feelings": "mildly sad",
+        "reasons": "upper lip huuuurts"
+    },
+    {
+        "time": "10:48 AM",
+        "hours": 0.80,
+        "number": 4,
+        "conditions": "still in the office",
+        "feelings": "embarrassed",
+        "reasons": "it's so loud"
+    },
+    {
+        "time": "11:00 AM",
+        "hours": 1,
+        "number": 4,
+        "conditions": "still in the office",
+        "feelings": "angry",
+        "reasons": "regretting no allergy pill"
+    },
+    {
+        "time": "3:41 PM",
+        "hours": 5.68,
+        "number": 1,
+        "conditions": "working 2nd floor MU",
+        "feelings": "inspired",
+        "reasons": "got idea for this project"
+    },
+    {
+        "time": "8:05 PM",
+        "hours": 10.08,
+        "number": 4,
+        "conditions": "cooking, just got home",
+        "feelings": "okay",
+        "reasons": "focused on turkey burger"
+    },
+    {
+        "time": "9:10 PM",
+        "hours": 11.17,
+        "number": 2,
+        "conditions": "procrastinating on work",
+        "feelings": "happy",
+        "reasons": "about to drink peach juice"
+    },
+    {
+        "time": "1:06 AM",
+        "hours": 15.10,
+        "number": 4,
+        "conditions": "doing homework",
+        "feelings": "uncomfortable",
+        "reasons": "drippy, craving shower"
+    },
+    {
+        "time": "10:04 AM",
+        "hours": 24.07,
+        "number": 2,
+        "conditions": "in AHI lecture",
+        "feelings": "discombobulated",
+        "reasons": "sniffy and so tired"
+    }   
+]
