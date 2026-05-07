@@ -15,8 +15,10 @@ footer{
     list-style-type: none;
     text-decoration: none;
     padding: 2em;
+    
+    z-index: 2000;
 
-    z-index: 200;
+    border: red 10px solid;
 }
 
 footer a{
@@ -26,7 +28,6 @@ footer a{
 
 body{
     margin:0;
-    font:normal 75% Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -49,6 +50,7 @@ canvas{
     background-size: 20%;
     background-position: 50% 50%;
 
+    top: 0;
 }
 
 /* ---- stats.js ---- */
