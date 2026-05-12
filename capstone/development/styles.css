@@ -1,0 +1,32 @@
+body{
+    margin: 4em;
+    font-family: "Inter";
+
+    background: linear-gradient(180deg, #FF8324 0%, #AD0000 57.57%, #630000 100%);
+}
+
+main{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+div{
+    padding: 2em 4em;
+    background: rgb(255, 255, 160);
+    border: solid black 2px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    padding-bottom: 1em;
+    color: rgb(255, 255, 160);
+}
