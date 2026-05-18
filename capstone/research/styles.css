@@ -1,0 +1,43 @@
+body{
+    width: 70%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    font-family: "Inter";
+
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: 14px;
+}
+
+p{
+    font-size: 16px;
+}
+
+div{
+    padding: 2em 4em;
+    background: rgb(255, 255, 160);
+    border: solid black 2px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin: 1em;
+    border: 2px solid black;
+}
